@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import fire from './config/Fire';
 
 class Login extends Component {
@@ -41,7 +41,7 @@ class Login extends Component {
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
             <input  value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted">  Let's Build Something!</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>

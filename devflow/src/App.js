@@ -1,47 +1,36 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import fire from './config/Fire';
-import Home from './Home';
-import Login from './Login';
+import Oauth from './userOauth/Oauth';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = ({
-      user: null,
-    });
-    this.authListener = this.authListener.bind(this);
-  }
-
-  componentDidMount() {
-    this.authListener();
-  }
-
-  authListener() {
-    fire.auth().onAuthStateChanged((user) => {
-      console.log(user);
-      if (user) {
-        this.setState({ user });
-        localStorage.setItem('user', user.uid);
-      } else {
-        this.setState({ user: null });
-        localStorage.removeItem('user');
-      }
-    });
-  }
-
   render() {
     return (
       <div className="App">
-        {this.state.user ? (
-          <Home />
-        ) :
-          (
-            <Login />
-          )}
+          <Oauth/>
       </div>
     );
   }
 }
+export default App;
+
+/*
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Oauth/>
+        <Router>
+          <Switch>
+            <Route path='/' exact={true} component={Home}/>
+            <Route path='/Dashboard' exact={true} component={Dashboard}/>
+            <Route path='/About' exact={true} component={About}/>
+          </Switch>
+        </Router>
+      </React.Fragment>
+    )
+  }
+}
 
 export default App;
+*/

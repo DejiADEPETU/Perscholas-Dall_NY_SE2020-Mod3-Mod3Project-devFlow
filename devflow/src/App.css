@@ -1,6 +1,17 @@
+body{
+  background-image: url("./components/img/photo-1472289065668-ce650ac443d2.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 70%;
+  /* height: 100vh;
+  width: 100vw; */
+}
+
 .App {
   text-align: center;
-  background-color: aquamarine;
+  //background-color: aquamarine;
+  margin : 15%; 
 }
 
 .App-logo {
