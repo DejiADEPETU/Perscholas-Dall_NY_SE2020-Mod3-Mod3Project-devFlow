@@ -20,7 +20,7 @@ Developers, Production Supervisors, Product Managers & Generally, Process Improv
 ## Wireframe
 
 ##### This shows both the overall look of the task managment system
-![Overview](devflow/src/components/img/overview.jpg)
+![Overview](devflow/src/components/img/overview.JPG)
 
 ##### The application comes with a firebase based user autherntication
 ![Oauth](devflow/src/components/img/oauth.JPG)
