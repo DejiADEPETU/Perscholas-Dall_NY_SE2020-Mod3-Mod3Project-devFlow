@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Oauth from './userOauth/Oauth';
-
+// import Oauth from './userOauth/Oauth';
+import DOMp from './components/DOMp'
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* 
         <div style={H2x}>
         <h1 style={H3x}> devflow</h1>
-        <h3> [Initiate,Tract & Done] </h3>
+        <h3> [Initiate,Tract & Done] </h3> 
         </div>
-          <Oauth/>
+        */}
+          <DOMp/>  
+          {/*<Oauth/>*/}
       </div>
     );
   }
