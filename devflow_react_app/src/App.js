@@ -7,12 +7,28 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div style={H2x}>
+        <h1 style={H3x}> devflow</h1>
+        <h3> [Initiate,Tract & Done] </h3>
+        </div>
           <Oauth/>
       </div>
     );
   }
 }
 export default App;
+
+const H2x ={
+  // marginTop : '5px',
+  float : 'center',
+  color : 'white'
+}
+
+const H3x ={
+
+  color : 'blue',  
+}
+
 
 /*
 class App extends Component {
