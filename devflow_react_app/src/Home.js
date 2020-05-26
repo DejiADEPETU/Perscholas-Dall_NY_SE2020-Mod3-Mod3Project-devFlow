@@ -15,7 +15,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>  Let's Build Something! /h1>
+                <h1> Let's Build Something! </h1>
                 <button onClick={this.logout}>Logout</button>
             </div>
         );
