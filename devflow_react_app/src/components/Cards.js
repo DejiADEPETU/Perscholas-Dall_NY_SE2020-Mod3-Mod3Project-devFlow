@@ -15,7 +15,7 @@ class EmployeeList extends Component {
   componentDidMount() {
     this.setState({isLoading: true});
 
-    fetch('api/nycgeek/employees')
+    fetch('deji_api/v1/cards')
       .then(response => response.json())
       .then(data => this.setState({employees: data, isLoading: false}));
   }
