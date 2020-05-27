@@ -45,36 +45,47 @@ class CardList extends Component {
         <td>{card.lastName}</td>
         <td>{card.email}</td>
         <td>
+
+          {/*
           <ButtonGroup>
             <Button size="sm" color="primary" tag={Link} to={"/card/" + card.id}>Edit</Button>
             <Button size="sm" color="danger" onClick={() => this.remove(card.id)}>Delete</Button>
           </ButtonGroup>
+           */}
+
+          <div>
+            <button size="sm" color="primary" tag={Link} to={"/card/" + card.id}>Edit</button>
+            <button size="sm" color="danger" onClick={() => this.remove(card.id)}>Delete</button>
+          </div>
+
         </td>
       </tr>
     });
 
     return (
       <div>
-        <AppNavbar/>
-        <Container fluid>
+        {/* <AppNavbar/> */}
+        <div>
           <div className="float-right">
-            <Button color="success" tag={Link} to="/card/new">Add Group</Button>
+            <button color="success" tag={Link} to="/card/new">Add Group</button>
           </div>
           <h3>My Cards List</h3>
-          <Table className="mt-4">
+          <table className="mt-4">
             <thead>
             <tr>
-              <th width="20%">First Name</th>
-              <th width="20%">Last Name</th>
-              <th>Email</th>
-              <th width="10%">Actions</th>
+              <th width="15%">Title</th>
+              <th width="15%">Owner</th>
+              <th>Note</th>
+              <th width="10%">Status</th>
+              <th width="10%">Logic</th>
+              <th width="10%">Misc</th>
             </tr>
             </thead>
             <tbody>
             {cardList}
             </tbody>
-          </Table>
-        </Container>
+          </table>
+        </div>
       </div>
     );
   }
