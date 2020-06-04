@@ -6,7 +6,8 @@ function Header(){
         <header style={headerStyle}>
             <h1 style={band_In_Header}>devflow</h1>
                 <div style={linkStyle}>
-                    <Link to="/">Home</Link> | <Link to="/boards">Boards</Link>| <Link to="/search">Search</Link>| <Link to="/addButton">[+]</Link>| <Link  to="/notifications">∆</Link>| <Link to="/help">?</Link>| <Link to="/dashboard">[Dashboard]</Link>| <Link to="/oauth">Login</Link>
+                    <Link to="/">Home</Link> | <Link to="/devflowboard">Boards</Link>| <Link to="/search">Search</Link>| <Link to="/addcard">[+]</Link>| <Link to="/oauth">Login</Link>
+                    {/* <Link to="/">Home</Link> | <Link to="/devflowboard">Boards</Link>| <Link to="/search">Search</Link>| <Link to="/addButton">[+]</Link>| <Link  to="/notifications">∆</Link>| <Link to="/help">?</Link>| <Link to="/dashboard">[Dashboard]</Link>| <Link to="/oauth">Login</Link> */}
                 </div>
         </header>
     )

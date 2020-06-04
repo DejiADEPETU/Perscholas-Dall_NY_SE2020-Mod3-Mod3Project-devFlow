@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
+import DOMp from './components/DOMp'
 
 class Home extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1> Let's Build Something! </h1>
+                <DOMp/>
                 <button onClick={this.logout}>Logout</button>
             </div>
         );
@@ -25,3 +26,5 @@ class Home extends Component {
 }
 
 export default Home;
+
+
